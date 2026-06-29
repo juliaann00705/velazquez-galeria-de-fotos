@@ -1,0 +1,314 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Catálogo de Productos</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+background:#f5f5f5;
+}
+
+/* Encabezado */
+
+header{
+position:relative;
+}
+
+header img{
+width:100%;
+height:350px;
+object-fit:cover;
+}
+
+header h1{
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+background:rgba(0,0,0,.6);
+color:white;
+padding:20px 40px;
+border-radius:10px;
+font-size:50px;
+}
+
+/* Navegación */
+
+nav{
+background:#0d47a1;
+}
+
+nav ul{
+display:flex;
+justify-content:center;
+list-style:none;
+}
+
+nav li{
+padding:18px;
+}
+
+nav a{
+text-decoration:none;
+color:white;
+font-size:18px;
+font-weight:bold;
+}
+
+nav a:hover{
+color:yellow;
+}
+
+/* Secciones */
+
+section{
+width:95%;
+margin:40px auto;
+}
+
+h2{
+text-align:center;
+margin-bottom:20px;
+color:#0d47a1;
+}
+
+/* Tabla */
+
+table{
+width:100%;
+border-collapse:collapse;
+background:white;
+}
+
+td{
+border:1px solid #ccc;
+padding:10px;
+text-align:center;
+}
+
+td img{
+width:140px;
+height:100px;
+object-fit:cover;
+border-radius:8px;
+}
+
+/* Formulario */
+
+form{
+width:500px;
+margin:auto;
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,.2);
+}
+
+input,textarea{
+width:100%;
+padding:10px;
+margin:10px 0;
+}
+
+button{
+padding:12px;
+background:#0d47a1;
+color:white;
+border:none;
+width:100%;
+cursor:pointer;
+font-size:18px;
+}
+
+button:hover{
+background:#1565c0;
+}
+
+/* Video */
+
+video{
+display:block;
+margin:auto;
+width:800px;
+max-width:100%;
+border-radius:10px;
+}
+
+/* Lo más vendido */
+
+.ventas td{
+padding:15px;
+}
+
+footer{
+background:#0d47a1;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<img src="https://picsum.photos/1400/350?random=100" alt="Portada">
+
+<h1>Catálogo de Productos</h1>
+
+</header>
+
+<nav>
+
+<ul>
+<li><a href="#">Inicio</a></li>
+<li><a href="#">Productos</a></li>
+<li><a href="#">Contacto</a></li>
+</ul>
+
+</nav>
+
+<section>
+
+<h2>Galería de Productos</h2>
+
+<table>
+
+<tr>
+<td><img src="https://picsum.photos/140/100?random=1"><br>Producto 1</td>
+<td><img src="https://picsum.photos/140/100?random=2"><br>Producto 2</td>
+<td><img src="https://picsum.photos/140/100?random=3"><br>Producto 3</td>
+<td><img src="https://picsum.photos/140/100?random=4"><br>Producto 4</td>
+<td><img src="https://picsum.photos/140/100?random=5"><br>Producto 5</td>
+<td><img src="https://picsum.photos/140/100?random=6"><br>Producto 6</td>
+<td><img src="https://picsum.photos/140/100?random=7"><br>Producto 7</td>
+</tr>
+
+<tr>
+<td><img src="https://picsum.photos/140/100?random=8"><br>Producto 8</td>
+<td><img src="https://picsum.photos/140/100?random=9"><br>Producto 9</td>
+<td><img src="https://picsum.photos/140/100?random=10"><br>Producto 10</td>
+<td><img src="https://picsum.photos/140/100?random=11"><br>Producto 11</td>
+<td><img src="https://picsum.photos/140/100?random=12"><br>Producto 12</td>
+<td><img src="https://picsum.photos/140/100?random=13"><br>Producto 13</td>
+<td><img src="https://picsum.photos/140/100?random=14"><br>Producto 14</td>
+</tr>
+
+<tr>
+<td><img src="https://picsum.photos/140/100?random=15"><br>Producto 15</td>
+<td><img src="https://picsum.photos/140/100?random=16"><br>Producto 16</td>
+<td><img src="https://picsum.photos/140/100?random=17"><br>Producto 17</td>
+<td><img src="https://picsum.photos/140/100?random=18"><br>Producto 18</td>
+<td><img src="https://picsum.photos/140/100?random=19"><br>Producto 19</td>
+<td><img src="https://picsum.photos/140/100?random=20"><br>Producto 20</td>
+<td><img src="https://picsum.photos/140/100?random=21"><br>Producto 21</td>
+</tr>
+
+<tr>
+<td><img src="https://picsum.photos/140/100?random=22"><br>Producto 22</td>
+<td><img src="https://picsum.photos/140/100?random=23"><br>Producto 23</td>
+<td><img src="https://picsum.photos/140/100?random=24"><br>Producto 24</td>
+<td><img src="https://picsum.photos/140/100?random=25"><br>Producto 25</td>
+<td><img src="https://picsum.photos/140/100?random=26"><br>Producto 26</td>
+<td><img src="https://picsum.photos/140/100?random=27"><br>Producto 27</td>
+<td><img src="https://picsum.photos/140/100?random=28"><br>Producto 28</td>
+</tr>
+
+<tr>
+<td><img src="https://picsum.photos/140/100?random=29"><br>Producto 29</td>
+<td><img src="https://picsum.photos/140/100?random=30"><br>Producto 30</td>
+<td><img src="https://picsum.photos/140/100?random=31"><br>Producto 31</td>
+<td><img src="https://picsum.photos/140/100?random=32"><br>Producto 32</td>
+<td><img src="https://picsum.photos/140/100?random=33"><br>Producto 33</td>
+<td><img src="https://picsum.photos/140/100?random=34"><br>Producto 34</td>
+<td><img src="https://picsum.photos/140/100?random=35"><br>Producto 35</td>
+</tr>
+
+</table>
+
+</section>
+
+<section>
+
+<h2>Formulario de Contacto</h2>
+
+<form>
+
+<input type="text" placeholder="Nombre" required>
+
+<input type="email" placeholder="Correo electrónico" required>
+
+<input type="tel" placeholder="Teléfono">
+
+<textarea rows="5" placeholder="Escribe tu mensaje"></textarea>
+
+<button type="submit">Enviar</button>
+
+</form>
+
+</section>
+
+<section>
+
+<h2>Video</h2>
+
+<video controls>
+
+<source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+
+</video>
+
+</section>
+
+<section>
+
+<h2>Lo más vendido</h2>
+
+<table class="ventas">
+
+<tr>
+
+<td><strong>Lo más vendido</strong></td>
+
+<td><img src="https://picsum.photos/150?random=101"></td>
+
+<td><img src="https://picsum.photos/150?random=102"></td>
+
+<td><img src="https://picsum.photos/150?random=103"></td>
+
+<td><img src="https://picsum.photos/150?random=104"></td>
+
+<td><img src="https://picsum.photos/150?random=105"></td>
+
+<td><img src="https://picsum.photos/150?random=106"></td>
+
+</tr>
+
+</table>
+
+</section>
+
+<footer>
+
+<h3>© 2026 Catálogo de Productos</h3>
+
+</footer>
+
+</body>
+</html>
+```

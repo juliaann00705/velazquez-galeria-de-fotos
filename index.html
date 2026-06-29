@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mi Página Web</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f0f0f0;
+}
+
+/* Barra */
+
+nav{
+    background:#0d47a1;
+    padding:15px;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    justify-content:center;
+}
+
+nav ul li{
+    margin:0 20px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+    font-weight:bold;
+}
+
+nav ul li a:hover{
+    color:yellow;
+}
+
+/* Imagen principal */
+
+header{
+    position:relative;
+}
+
+header img{
+    width:100%;
+    height:400px;
+    object-fit:cover;
+}
+
+header h1{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    color:white;
+    font-size:55px;
+    background:rgba(0,0,0,.5);
+    padding:15px 30px;
+    border-radius:10px;
+}
+
+section{
+    width:90%;
+    margin:auto;
+    margin-top:40px;
+}
+
+h2{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+/* Tabla */
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+td{
+    border:1px solid #999;
+    padding:10px;
+    text-align:center;
+}
+
+td img{
+    width:180px;
+    height:120px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+/* Carrusel */
+
+.slider{
+    width:800px;
+    height:420px;
+    margin:auto;
+    overflow:hidden;
+    border-radius:10px;
+}
+
+.slider ul{
+    display:flex;
+    width:300%;
+    animation:slide 12s infinite;
+}
+
+.slider li{
+    list-style:none;
+    width:100%;
+}
+
+.slider img{
+    width:100%;
+    height:420px;
+    object-fit:cover;
+}
+
+@keyframes slide{
+
+0%,30%{
+margin-left:0;
+}
+
+35%,65%{
+margin-left:-100%;
+}
+
+70%,100%{
+margin-left:-200%;
+}
+
+}
+
+/* Video */
+
+.video{
+text-align:center;
+}
+
+video{
+width:800px;
+max-width:100%;
+border-radius:10px;
+}
+
+/* Productos */
+
+.productos img{
+width:120px;
+height:120px;
+object-fit:cover;
+border-radius:10px;
+}
+
+footer{
+background:#0d47a1;
+color:white;
+padding:20px;
+text-align:center;
+margin-top:40px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<img src="https://picsum.photos/1400/400?random=100">
+
+<h1>Mi Página Web</h1>
+
+</header>
+
+<nav>
+
+<ul>
+
+<li><a href="#">Inicio</a></li>
+
+<li><a href="#">Galería</a></li>
+
+<li><a href="#">Contacto</a></li>
+
+</ul>
+
+</nav>
+
+<section>
+
+<h2>Galería de Imágenes</h2>
+
+<table>
+
+<tr>
+
+<td>
+<img src="https://picsum.photos/200/120?random=1">
+<p>Paisaje natural</p>
+</td>
+
+<td>
+<img src="https://picsum.photos/200/120?random=2">
+<p>Montañas</p>
+</td>
+
+<td>
+<img src="https://picsum.photos/200/120?random=3">
+<p>Ciudad moderna</p>
+</td>
+
+<td>
+<img src="https://picsum.photos/200/120?random=4">
+<p>Playa</p>
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+<img src="https://picsum.photos/200/120?random=5">
+<p>Bosque</p>
+</td>
+
+<td>
+<img src="https://picsum.photos/200/120?random=6">
+<p>Lago</p>
+</td>
+
+<td>
+<img src="https://picsum.photos/200/120?random=7">
+<p>Desierto</p>
+</td>
+
+<td>
+<img src="https://picsum.photos/200/120?random=8">
+<p>Cascada</p>
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+<img src="https://picsum.photos/200/120?random=9">
+<p>Campo</p>
+</td>
+
+<td>
+<img src="https://picsum.photos/200/120?random=10">
+<p>Río</p>
+</td>
+
+<td>
+<img src="https://picsum.photos/200/120?random=11">
+<p>Flores</p>
+</td>
+
+<td>
+<img src="https://picsum.photos/200/120?random=12">
+<p>Atardecer</p>
+</td>
+
+</tr>
+
+</table>
+
+</section>
+
+<section>
+
+<h2>Carrusel de Imágenes</h2>
+
+<div class="slider">
+
+<ul>
+
+<li><img src="https://picsum.photos/800/420?random=20"></li>
+
+<li><img src="https://picsum.photos/800/420?random=21"></li>
+
+<li><img src="https://picsum.photos/800/420?random=22"></li>
+
+</ul>
+
+</div>
+
+</section>
+
+<section class="video">
+
+<h2>Video</h2>
+
+<video controls>
+
+<source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+
+</video>
+
+</section>
+
+<section>
+
+<h2>Productos</h2>
+
+<table class="productos">
+
+<tr>
+
+<td><img src="https://picsum.photos/120?random=31"></td>
+<td><img src="https://picsum.photos/120?random=32"></td>
+<td><img src="https://picsum.photos/120?random=33"></td>
+<td><img src="https://picsum.photos/120?random=34"></td>
+<td><img src="https://picsum.photos/120?random=35"></td>
+<td><img src="https://picsum.photos/120?random=36"></td>
+
+</tr>
+
+<tr>
+
+<td>$120</td>
+<td>$180</td>
+<td>$250</td>
+<td>$320</td>
+<td>$410</td>
+<td>$550</td>
+
+</tr>
+
+</table>
+
+</section>
+
+<footer>
+
+<h3>© 2026 Mi Página Web</h3>
+
+</footer>
+
+</body>
+</html>
